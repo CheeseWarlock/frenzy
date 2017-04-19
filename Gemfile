@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 #end
 
 gem 'foundation-rails'
+gem 'devise'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
