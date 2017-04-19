@@ -1,3 +1,4 @@
+<h1>Add Restaurant</h1>
 <%= form_for :restaurant, url: restaurants_path do |f| %>
 	<p>
 		<%= f.label :name %><br />
@@ -5,7 +6,7 @@
 	</p>
 	<p>
 		<%= f.label :location %><br />
-		<%= f.text_field :location %>
+		<%= f.text_field :location, :value => params[:location] %>
 	</p>
 	<p>
 		<%= f.label :description %><br />

@@ -1,6 +1,6 @@
 <h1>Restaurants</h1>
 <% @locations.each do |l, r| %>
-	<h2><%= l %></h2>
+	<h3><%= l %><%= link_to 'Add', new_restaurant_path(location: l), :class => "button" %></h3>
 	<ul>
 		<% r.each do |s| %>
 			<li>
@@ -9,3 +9,4 @@
 		<% end %>
 	</ul>
 <% end %>
+<%= link_to 'Add', new_restaurant_path, :class => "button" %>
