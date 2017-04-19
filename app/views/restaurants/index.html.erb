@@ -1,8 +1,11 @@
-<% @restaurants.each do |r| %>
-	<p>
-		<%= r.name %>
-	</p>
-	<p>
-		<%= r.location %>
-	</p>
+<h1>Restaurants</h1>
+<% @locations.each do |l, r| %>
+	<h2><%= l %></h2>
+	<ul>
+		<% r.each do |s| %>
+			<li>
+				<%= s.name %>
+			</li>
+		<% end %>
+	</ul>
 <% end %>

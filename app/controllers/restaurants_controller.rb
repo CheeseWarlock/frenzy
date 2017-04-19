@@ -1,6 +1,13 @@
 class RestaurantsController < ApplicationController
 	def index
-		@restaurants = Restaurant.all
+		@locations = {}
+		Restaurant.all.each do |r|
+			if @locations[r.location]
+				@locations[r.location].push r
+			else
+				@locations[r.location] = [r]
+			end
+		end
 	end
 
 	def new
