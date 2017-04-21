@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stars: 9.99
+  summary: MyText
+  body: MyText
+  user: one
+  restaurant: one
+
+two:
+  stars: 9.99
+  summary: MyText
+  body: MyText
+  user: two
+  restaurant: two
