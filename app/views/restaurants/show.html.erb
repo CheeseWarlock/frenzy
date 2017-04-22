@@ -7,3 +7,14 @@
   <strong>Location:</strong>
   <%= @restaurant.location %>
 </p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @restaurant.description %>
+</p>
+
+<%= @reviews.each do |r| %>
+  <p>
+    <strong>Review</strong>
+  </p>
+<% end %>
