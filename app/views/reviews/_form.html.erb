@@ -10,7 +10,18 @@
       </ul>
     </div>
   <% end %>
-
+  <p>
+    <%= f.label :stars %><br />
+    <%= f.text_field :stars %>
+  </p>
+  <p>
+    <%= f.label :summary %><br />
+    <%= f.text_field :summary %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_field :body %>
+  </p>
   <div class="actions">
     <%= f.submit %>
   </div>
