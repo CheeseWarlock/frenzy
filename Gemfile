@@ -7,6 +7,7 @@ source 'https://rubygems.org'
 
 gem 'foundation-rails'
 gem 'devise'
+gem 'jquery-turbolinks'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
