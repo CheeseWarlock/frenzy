@@ -4,9 +4,9 @@
 	<ul>
 		<% r.each do |s| %>
 			<li>
-				<%= s.name %>
+				<%= link_to s.name, restaurant_path(s) %>
 			</li>
 		<% end %>
 	</ul>
 <% end %>
-<%= link_to 'Add', new_restaurant_path, :class => "button" %>
+<%= link_to 'Add Restaurant', new_restaurant_path, :class => "button" %>

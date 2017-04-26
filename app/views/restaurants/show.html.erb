@@ -2,7 +2,7 @@
   <strong>Name:</strong>
   <%= @restaurant.name %>
 </p>
- 
+
 <p>
   <strong>Location:</strong>
   <%= @restaurant.location %>
@@ -13,8 +13,10 @@
   <%= @restaurant.description %>
 </p>
 
-<%= @reviews.each do |r| %>
+<% @reviews.each do |r| %>
   <p>
-    <strong>Review</strong>
+    <%= render 'application/review_box', review: r %>
   </p>
 <% end %>
+
+<%= link_to 'Add Review', new_review_path(restaurant_id: @restaurant.id), :class => "button" %>

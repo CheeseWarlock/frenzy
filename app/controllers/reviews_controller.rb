@@ -7,9 +7,10 @@ class ReviewsController < ApplicationController
 		@review.user = current_user
 	end
 	def create
-		@review = Review.new(params.require(:review).permit(:stars, :summary, :body))
+		@review = Review.new(params.require(:review).permit(:stars, :summary, :body, :restaurant_id))
 		@review.user = current_user
-		@review.restaurant = Restaurant.last
+    puts "aaaaaa"
+    puts params[:restaurant_id]
 		@review.save
 
 		redirect_to Restaurant
